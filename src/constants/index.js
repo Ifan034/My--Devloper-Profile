@@ -15,14 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  webdev,
+  next,
+  hoobank,
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -117,10 +116,10 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: " ",
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -130,41 +129,43 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    company_name: " ",
+    icon: reactjs,
+    iconBg: "#00264d",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Coordinate with development teams and designers to develop web applications that run on numerous platforms.",
+      "Using React Native, design and develop user interface components for JavaScript-based online and mobile apps.",
+      "Troubleshoot issues and improve front-end performance.",
+      "Write reusable, effective, as well as scalable JavaScript code and create interchangeable front-end modules.",
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    company_name: " ",
+    icon: webdev,
+    iconBg: "#d1d1e0",
+    date: " ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Website and software application designing, building, or maintaining.",
+      "Ability to write and edit technical documentation.",
+      "Creative problem-solving skills.",
+      "Ability to work and thrive in a fast-paced environment.",
+      "Creative problem-solving skills",
+      "Determining user needs by analyzing technical requirements.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Next.js Developer",
+    company_name: " ",
+    icon: next,
+    iconBg: "#ffe6ee",
+    date: " ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing, developing, and implementing web applications using Next.js and related front-end technologies, such as React, HTML, CSS, and JavaScript.",
+      "Writing clean, maintainable, and well-structured code, adhering to best practices and industry standards for Next.js development.",
+      "Optimizing web applications for maximum performance, compatibility, and responsiveness across various platforms and devices.",
+      "Staying up to date with the latest advancements in Next.js, React, and front-end web development technologies, and identifying opportunities to enhance existing applications or create new ones.",
     ],
   },
 ];
@@ -172,15 +173,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "I thought it was impossible to make a website as beautiful as our product, but he proved me wrong.",
+    name: "Corey Robertson",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://randomuser.me/api/portraits/men/85.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like he does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,35 +189,35 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "After optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Tristan Campbell",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: "https://randomuser.me/api/portraits/men/86.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HooBank",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Modern web development by building a responsive React JS application consisting of a stunning hero section, high-quality assets and gradients, business stats, reusable feature sections with call-to-action buttons, testimonials, and more!.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "ui/ux",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: hoobank,
+    source_code_link: "https://modern-ui-ux-with-react-p9bwf2qnp-ifans-projects.vercel.app",
   },
   {
     name: "Job IT",
