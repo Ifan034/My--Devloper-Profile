@@ -3,22 +3,16 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
   html,
   css,
+  javascript,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
-  docker,
-  carrent,
   jobit,
   tripguide,
-  threejs,
   webdev,
   next,
   hoobank,
@@ -71,10 +65,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  
   {
     name: "React JS",
     icon: reactjs,
@@ -87,30 +78,8 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
+
 ];
 
 const experiences = [
@@ -246,11 +215,11 @@ const projects = [
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -259,7 +228,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://travel-application-eight.vercel.app/",
   },
 ];
 
