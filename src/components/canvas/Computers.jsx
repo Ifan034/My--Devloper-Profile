@@ -11,8 +11,7 @@ const Computers = ({ isMobile }) => {
     <mesh>
       <hemisphereLight intensity={1} position={[0, 1, 0]} groundColor='black' />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={2} intensity={3000} castShadow shadow-mapSize={1024} />
-      <pointLight position={[-10, -10, -10]} intensity={
-        1000}  />
+      <pointLight position={[-10, -10, -10]} intensity={1000} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.70}
@@ -25,27 +24,33 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showComputer, setShowComputer] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQueryMobile = window.matchMedia("(max-width: 500px)");
+    const mediaQueryDesktop = window.matchMedia("(min-width: 768px)");
 
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
+    setIsMobile(mediaQueryMobile.matches);
+    setShowComputer(mediaQueryDesktop.matches);
 
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
+    const handleMobileChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    const handleDesktopChange = (event) => {
+      setShowComputer(event.matches);
+    };
 
-    // Remove the listener when the component is unmounted
+    mediaQueryMobile.addEventListener("change", handleMobileChange);
+    mediaQueryDesktop.addEventListener("change", handleDesktopChange);
+
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mediaQueryMobile.removeEventListener("change", handleMobileChange);
+      mediaQueryDesktop.removeEventListener("change", handleDesktopChange);
     };
   }, []);
+
+  if (!showComputer) return null; // Don't render anything if showComputer is false
 
   return (
     <Canvas
