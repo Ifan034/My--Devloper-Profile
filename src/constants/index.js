@@ -11,11 +11,11 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  jobit,
   tripguide,
   webdev,
   next,
   hoobank,
+  zentry,
 } from "../assets";
 
 export const navLinks = [
@@ -26,6 +26,14 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
   },
   {
     id: "contact",
@@ -186,28 +194,30 @@ const projects = [
       },
     ],
     image: hoobank,
-    source_code_link: "https://modern-ui-ux-with-react-p9bwf2qnp-ifans-projects.vercel.app",
+    source_code_link: "https://github.com/Ifan034/Modern-Ui-Ux-With-React",
+    live_link: "https://modern-ui-ux-with-react-p9bwf2qnp-ifans-projects.vercel.app",
   },
   {
-    name: "Job IT",
+    name: "Gaming Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "this website create using React, Tailwind CSS, and the useGSAP library to recreate its modern and dynamic design. React provided the framework for building reusable components, while Tailwind CSS ensured a clean, responsive layout with minimal effort.  GSAP's animation capabilities for smooth transitions and effects.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "useGSAP",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: zentry,
+    source_code_link: "https://github.com/Ifan034/Gaming-Website-React-Gsap-Tailwind",
+    live_link: "https://zentry-gaming-website.vercel.app/",
   },
   {
     name: "Trip Guide",
@@ -228,8 +238,10 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://travel-application-eight.vercel.app/",
+    source_code_link: "https://github.com/Ifan034/Travel-Application",
+    live_link: "https://travel-application-eight.vercel.app/",
   },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

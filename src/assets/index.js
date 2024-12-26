@@ -32,6 +32,8 @@ import tripguide from "./tripguide.png";
 import webdev from './webdev.png';
 import next from './next.svg';
 import hoobank from './hoobank.png';
+import zentry from './zentry.webp';
+import live from './live.png'
 
 export {
   logo,
@@ -65,4 +67,6 @@ export {
   webdev,
   next,
   hoobank,
+  zentry,
+  live,
 };
