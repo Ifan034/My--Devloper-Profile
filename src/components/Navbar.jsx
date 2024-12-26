@@ -47,21 +47,21 @@ const Navbar = () => {
             window.scrollTo(0, 0); // Scroll to top
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-medium cursor-pointer flex '>
+          <img src={logo} alt='logo' className='w-16 h-12 object-contain' />
+          <p className='text-white text-[18px] font-semibold cursor-pointer flex uppercase m'>
             Ifan Ul Abedin &nbsp;
             {/* <span className='sm:block hidden'> | Portfolio</span> */}
           </p>
         </Link>
 
         {/* Navigation links for desktop */}
-        <ul className='list-none hidden md:flex flex-row gap-10'>
+        <ul className='list-none hidden lg:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-semibold cursor-pointer uppercase`}
               onClick={() => setActive(nav.title)} // Set active link on click
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -70,7 +70,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile menu toggle button */}
-        <div className='md:hidden flex flex-1 justify-end items-center'>
+        <div className='lg:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu} // Toggle between menu and close icon
             alt='menu'
